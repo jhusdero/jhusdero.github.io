@@ -1,0 +1,446 @@
+html,
+body,
+.carousel-inner,
+.carousel-inner .item{
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+#sidebar-wrapper{
+    z-index: 1000;
+    position: fixed;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    margin-right: -250px;
+    overflow-y: auto;
+    background: #1C1C1C;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.sidebar-nav{
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+.sidebar-nav li{
+    text-indent: 10%;
+    line-height: 430%;
+}
+
+.sidebar-nav li a{
+    display: block;
+    color: white;;
+    text-decoration:none;
+    font-size: 160%
+}
+.sidebar-nav li a:hover{
+    color: black;
+    background: #848484;
+    text-decoration: none;
+    
+}
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus{
+    text-decoration: none;
+}
+
+.btn-dark {
+    border-radius: 0;
+    color: #fff;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active {
+    color: #fff;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.btn-light {
+    border-radius: 0;
+    color: #333;
+    background-color: rgba(255,255,255,0.8);
+}
+
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active {
+    color: #333;
+    background-color: rgb(255,255,255);
+}
+
+#menu-toggle{
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+#sidebar-wrapper.active{
+    right: 250px;
+    width: 250px;
+    -webkit-transition:all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+.toggle{
+    margin: 0 5px 0 0;
+}
+
+@media(max-width:768px) {
+    .map {
+        height: 75%;
+    }
+    
+}
+
+/*.header{
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(back3.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-position: center;
+    background-size: cover;
+}*/
+.carousel-inner{
+    z-index: -1;
+}
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+}
+#second{
+    position: absolute;
+    width: 40%;
+    height: 50%;
+    top: 20%;
+    left: 0%;
+}
+#fourth{
+    position: absolute;
+    width: 30%;
+    top: 40%;
+    left: 60%;
+}
+.about-description{
+    height: 62%;
+    background-color:deepskyblue;
+    padding: 10px;
+}
+.profile-pic{
+    width: 90%;
+    height: 80%;
+}
+.profile-pic img{
+    width: 100%;
+    height: 100%;
+        
+}
+
+
+/*.social-popout{
+    height: 10%;
+    width: 3.6%;
+    margin-left: 2%;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+    -ms-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+}
+
+.social-popout img{
+    border-radius: 50%;
+	margin: 8px;
+	width: 100%;
+	box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.8);
+	-webkit-transition: all ease 0.5s;
+	-moz-transition: all ease 0.5s;
+	-o-transition: all ease 0.5s;
+	-ms-transition: all ease 0.5s;
+	transition: all ease 0.5s;
+}
+.social-popout img:hover {
+	margin: 0px;
+	box-shadow: 6px 6px 4px 4px rgba(0,0,0,0.3);
+}*/
+
+.text-vertical-center{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.text-vertical-center h1{
+    margin: 0;
+    padding: 0;
+}
+
+#audio{
+    height: 100%;
+    width: 100%;
+    background-color: #eee;
+}
+.description{
+    position: relative;
+    top: 50%;
+    left: 25%;
+    width: 50%;
+    height: 25%
+}
+.line {
+	background: black;
+	width: 100px;
+	height: 1px;
+	margin: 0 auto;
+}
+.audioImages{
+    width: 90%;
+    height: 32%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    margin: 5px;
+}
+.audioImages img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+    
+}
+
+.audioImages .afterhover{
+    position: absolute;;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 250px;
+    padding-right: 20px;
+}
+.afterhover h3{
+    color: white;
+    position: relative;
+    font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+    padding: 25px;
+    background: rgba(0, 0, 0, 0.7);
+    margin: 2px 0 0 0;
+}
+.afterhover p{
+    color: white;
+    font-family: Verdana, sans-serif;
+    font-style: italic;
+    background: rgba(0, 0, 0, 0.7);
+    margin: 10px 0 0 0;
+}
+.first img{
+    transition: all 0.2s linear;
+}
+.first .afterhover{
+    opacity: 0;
+    background-color: rgba(219,127,8, 0.7); 
+    transition: all 0.4s ease-in-out;
+}
+.first h3 {
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+.first p { 
+    transform: translateY(100px);
+    opacity: 0;
+	transition: all 0.2s linear;
+}
+.first:hover img { 
+	transform: scale(1.1);
+} 
+.first:hover .afterhover { 
+	opacity: 1;
+}
+.first:hover h3,
+.first:hover p {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.first:hover p {
+    transition-delay: 0.1s;
+}
+
+.meetTheGwanist{
+    height: 100%;
+}
+#about{
+    height: 30%;
+}
+
+.services{
+    height: 60%;
+}
+
+.image-services{
+    height: 60%;
+    width: 90%;
+    border: 2px solid #ccc;
+    border-radius: 90%;
+    position: relative;
+    left: 10%;
+    
+}
+.image-services img{
+    width: 100%;
+}
+.image1{
+    background-image:url(webdesign.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.7;
+}
+.image1:hover{
+    opacity: 1;
+}
+.image2{
+    background-image: url(dj.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+}
+.image2:hover{
+    opacity: 1;
+}
+.image3{
+    background-image: url(app.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+}
+.image3:hover{
+    opacity: 1;
+}
+.services .col-lg-3,
+.services .col-md-4{
+    position: relative;
+    top: 40px;
+    left: 15%
+}
+
+.services .col-lg-3:hover{
+    transform: scale(1.1);
+}
+.services .col-md-4:hover{
+    transform: scale(1.1);
+}
+.services .col-xs-6:hover{
+    transform: scale(1.1);
+}
+#contact{
+    background: black;
+    height: 50%;
+}
+
+
+.social{
+    width: 15%;
+    position: relative;
+    left: 30%;
+    margin: 20px;
+}
+#social-instagram{ 
+    width: 100%;
+    
+}
+#social-instagram h3{
+    position: relative;
+    bottom: 50px;
+    left: 60px
+}
+#social-facebook{
+        width: 100%;
+}
+#social-facebook h3{
+    position: relative;
+    bottom: 50px;
+    left: 60px
+}
+#social-twitter{   
+    width: 100%;
+}
+#social-twitter h3{
+    position: relative;
+    bottom: 50px;
+    left: 60px
+}
