@@ -248,7 +248,7 @@ body {
 }
 
 #audio{
-    height: 100%;
+    height: auto;
     width: 100%;
     background-color: #eee;
 }
@@ -257,7 +257,7 @@ body {
     top: 50%;
     left: 25%;
     width: 50%;
-    height: 25%
+    height: auto;
 }
 .line {
 	background: black;
@@ -340,19 +340,15 @@ body {
 }
 
 .meetTheGwanist{
-    height: 100%;
+    height: auto;
 }
 #about{
     height: 30%;
 }
 
-.services{
-    height: 60%;
-}
-
 .image-services{
-    height: 60%;
-    width: 90%;
+    height: 40%;
+    width: 70%;
     border: 2px solid #ccc;
     border-radius: 90%;
     position: relative;
@@ -363,7 +359,7 @@ body {
     width: 100%;
 }
 .image1{
-    background-image:url(webdesign.jpg);
+    background-image:url(dj3.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -383,7 +379,7 @@ body {
     opacity: 1;
 }
 .image3{
-    background-image: url(app.jpg);
+    background-image: url(dj2.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
